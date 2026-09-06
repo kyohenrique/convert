@@ -58,4 +58,3 @@ Estas são limitações assumidas do exercício, não bugs a serem corrigidos po
   EUR 5.50, GBP 6.20) e não vêm de nenhuma API. Ou seja, estão desatualizadas.
 - **O campo de valor só aceita números inteiros.** O filtro `/\D+/g` remove
   vírgulas e pontos, então digitar `12,50` é interpretado como `1250`.
-- **O layout tem largura fixa de 480px** e não se adapta a telas menores.

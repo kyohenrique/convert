@@ -24,6 +24,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  padding: 2rem 1rem;
 
   background-color: #0e0f25;
   background-image: url("./images/background.png");
@@ -41,7 +42,8 @@ body {
 }
 
 main {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   border-radius: 1.5rem;
 
   border: 1px solid #2f3279;
@@ -159,4 +161,15 @@ footer h1 {
   font-size: 2rem;
   line-height: 3rem;
   word-break: break-all;
+}
+
+/* Em telas pequenas o padding interno diminui para sobrar mais espaço */
+@media (max-width: 480px) {
+  form {
+    padding: 2.5rem 1.5rem;
+  }
+
+  footer {
+    padding: 2rem 1.5rem;
+  }
 }
