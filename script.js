@@ -36,8 +36,8 @@ form.onsubmit = (event) => {
 
 // Converte o valor digitado para reais e exibe o resultado
 function convertCurrency(amount, rate, symbol) {
-  // Mostra a cotação usada, ex.: "$ 1 = 5.25"
-  rateText.textContent = `${symbol} 1 = ${rate}`;
+  // Mostra a cotação usada, ex.: "$ 1 = 5,25"
+  rateText.textContent = `${symbol} 1 = ${rate.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
 
   // Calcula o total
   const total = amount * rate;
